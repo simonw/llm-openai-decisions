@@ -1,0 +1,31 @@
+[project]
+name = "llm-openai-decisions"
+version = "0.1"
+description = "LLM plugin for the OpenAI Decisions API"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.10"
+dependencies = [
+    "llm"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-openai-decisions"
+Changelog = "https://github.com/simonw/llm-openai-decisions/releases"
+Issues = "https://github.com/simonw/llm-openai-decisions/issues"
+CI = "https://github.com/simonw/llm-openai-decisions/actions"
+
+[project.entry-points.llm]
+openai_decisions = "llm_openai_decisions"
+
+[dependency-groups]
+dev = ["pytest"]
