@@ -14,7 +14,7 @@ llm install llm-openai-decisions
 llm keys set openai
 ```
 
-You can also set the `OPENAI_API_KEY` environment variable, or use LLM's `--key` option. This plugin registers `openai-decisions/gpt-6-luna`, with no aliases.
+You can also set the `OPENAI_API_KEY` environment variable, or use LLM's `--key` option.
 
 ## Yes/no questions
 
